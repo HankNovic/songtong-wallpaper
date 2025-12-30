@@ -1,0 +1,131 @@
+{
+	/**
+	 * 页面路由配置
+	 * pages数组中第一项表示应用启动页
+	 * 参考：https://uniapp.dcloud.io/collocation/pages
+	 */
+	"pages": [
+		// 首页（启动页）- 推荐页面
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "松桐壁纸",
+				"navigationStyle": "custom" // 使用自定义导航栏
+			}
+		},
+		// 分类页面
+		{
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationStyle": "custom" // 使用自定义导航栏
+			}
+		},
+		// 用户中心页面
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom" // 使用自定义导航栏
+			}
+		},
+		// 分类列表页面（分类详情页）
+		{
+			"path": "pages/classList/classList",
+			"style": {
+				"navigationBarTitleText": "分类列表",
+				"enablePullDownRefresh": true
+			}
+		},
+		// 壁纸预览页面
+		{
+			"path": "pages/preview/preview",
+			"style": {
+				"navigationBarTitleText": "预览",
+				"navigationStyle": "custom" // 使用自定义导航栏
+			}
+		},
+		// 公告列表页面
+		{
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTitleText": "公告"
+			}
+		},
+		// 公告详情页面
+		{
+			"path": "pages/notice/detail",
+			"style": {
+				"navigationBarTitleText": "公告详情"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/pcHome/pcHome",
+			"style": {
+				"navigationBarTitleText": "",
+				// 关闭默认自带头部导航栏
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	/**
+	 * 全局样式配置
+	 * 应用于所有页面的默认样式
+	 */
+	"globalStyle": {
+		"navigationBarTextStyle": "black", // 导航栏文字颜色
+		"navigationBarTitleText": "松桐壁纸", // 默认导航栏标题
+		"navigationBarBackgroundColor": "#fff", // 导航栏背景色
+		"backgroundColor": "#F8F8F8" // 页面背景色
+	},
+	/**
+	 * 底部标签栏配置
+	 * 定义应用的底部导航栏
+	 */
+	"tabBar": {
+		"color": "#9799a5", // 未选中时的文字颜色
+		"selectedColor": "#28b389", // 选中时的文字颜色
+		"list": [
+			// 推荐标签
+			{
+				"text": "推荐",
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/images/home.png", // 未选中图标
+				"selectedIconPath": "/static/images/home-h.png" // 选中图标
+			},
+			// 分类标签
+			{
+				"text": "分类",
+				"pagePath": "pages/classify/classify",
+				"iconPath": "/static/images/classify.png",
+				"selectedIconPath": "/static/images/classify-h.png"
+			},
+			// 我的标签
+			{
+				"text": "我的",
+				"pagePath": "pages/user/user",
+				"iconPath": "/static/images/user.png",
+				"selectedIconPath": "/static/images/user-h.png"
+			}
+		]
+	},
+	/**
+	 * uni-id 路由配置
+	 * 用于 uni-id 插件的路由权限控制
+	 */
+	"uniIdRouter": {},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

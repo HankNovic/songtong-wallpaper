@@ -1,0 +1,37 @@
+// 让 <view> 的宽高不会被 padding 和 border 撑大，使布局更稳定、不溢出
+view swiper swiper-item{
+	box-sizing: border-box;
+}
+
+// 带渐变的背景层
+.pageBg {
+	background: 
+	linear-gradient(to bottom,transparent,#fff 400rpx),
+	linear-gradient(to right ,#beecd8 20%,#f4e2d8);
+	min-height: 80vh;
+}
+
+.loadingBox {
+	padding: 30rpx 0;
+}
+
+// 适配 WP 底部安全区域
+.safe-area-inset-bottom{
+	height: env(safe-area-inset-bottom);
+}
+
+// 隐藏y坐标的滑动条
+/* #ifdef H5 */
+html,
+body {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+/* #endif */

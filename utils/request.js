@@ -3,6 +3,9 @@
  * 统一处理 API 请求、错误处理和请求头配置
  */
 
+// 导入 API 配置
+import apiConfig from './config.js'
+
 // API 基础地址
 // 默认给小程序 / App：必须是绝对地址
 let BASE_URL = 'https://tea.qingnian8.com/api/bizhi'
@@ -26,8 +29,8 @@ export function request(config = {}) {
 
 	// 拼接完整的请求 URL
 	url = BASE_URL + url
-	// 添加访问密钥到请求头
-	header['access-key'] = "wdf999"
+	// 添加访问密钥到请求头（从配置文件读取）
+	header['access-key'] = apiConfig.accessKey
 
 	// 返回 Promise 对象，封装 uni.request
 	return new Promise((resolve, reject) => {

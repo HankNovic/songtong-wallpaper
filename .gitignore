@@ -7,3 +7,4 @@ unpackage/
 .idea/
 .vscode/
 suggest/
+utils/config.js

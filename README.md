@@ -141,6 +141,26 @@ npm run build:mp-weixin
 
 ## 配置说明
 
+### manifest.json 配置
+
+**重要**：首次运行项目前，需要创建并配置 `manifest.json` 文件。
+
+1. 复制配置文件模板：
+   ```bash
+   cp manifest.example.json manifest.json
+   ```
+
+2. 编辑 `manifest.json`，填入你的微信小程序 AppID：
+   ```json
+   {
+     "mp-weixin": {
+       "appid": "your-wechat-appid-here"
+     }
+   }
+   ```
+
+**注意**：`manifest.json` 文件已添加到 `.gitignore`，不会被提交到 Git，请妥善保管。
+
 ### API 密钥配置
 
 **重要**：首次运行项目前，需要配置 API 访问密钥。
@@ -189,20 +209,6 @@ server: {
 }
 ```
 
-### 小程序配置
-
-在 `manifest.json` 中配置小程序 AppID：
-
-```json
-{
-  "mp-weixin": {
-    "appid": "你的小程序AppID",
-    "setting": {
-      "urlCheck": false
-    }
-  }
-}
-```
 
 ### Mock 数据
 

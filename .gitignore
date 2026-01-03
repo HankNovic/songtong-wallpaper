@@ -1,10 +1,41 @@
+# 依赖目录
 node_modules/
-dist/
+
+# 构建产物
 dist/
 unpackage/
+
+# 环境变量和配置
 .env*
+utils/config.js
+manifest.json
+
+# 系统文件
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE 配置
 .idea/
 .vscode/
+.hbuilderx/
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 缓存和临时文件
+.cache/
+.temp/
+.tmp/
+*.tmp
+.eslintcache
+.stylelintcache
+
+# 自定义目录
 suggest/
-utils/config.js

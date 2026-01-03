@@ -1,6 +1,9 @@
 # 松桐壁纸
 
 一个基于 uni-app 开发的跨平台壁纸应用，支持 H5、微信小程序、APP 等多个平台。提供丰富的壁纸资源，支持分类浏览、搜索、下载、评分等功能。
+<p float="left">
+  <img src="./common/images/show.ipg" width="600" />
+</p>
 
 ## 项目简介
 
@@ -32,7 +35,7 @@
 - **构建工具**: Vite
 - **UI组件**: uni-ui、uv-ui
 - **样式**: SCSS
-- **代码规范**: ESLint（可选）
+- **代码规范**: ESLint
 
 ### 主要依赖
 

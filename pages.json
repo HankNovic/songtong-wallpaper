@@ -68,7 +68,7 @@
 		{
 			"path": "pages/pcHome/pcHome",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "PC端预览",
 				// 关闭默认自带头部导航栏
 				"navigationStyle": "custom"
 			}

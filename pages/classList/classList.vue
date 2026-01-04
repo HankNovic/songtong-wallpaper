@@ -53,10 +53,9 @@
 		if (type) queryParams.type = type
 		// 设置查询参数中的分类ID
 		if (id) queryParams.classid = id
-
 		// 缺失关键参数操作
-		if (!id) {
-			goToHome()
+		if (!id && !type) {
+			goToHome("页面参数有误")
 			return
 		}
 

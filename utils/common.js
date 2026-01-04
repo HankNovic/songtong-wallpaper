@@ -34,10 +34,10 @@ export function compareTimestamp(timestamp) {
 }
 
 // 缺少必要参数时展示
-export function goToHome() {
+export function goToHome(meg) {
 	uni.showModal({
 		title: "提示",
-		content: "页面有误将返回首页",
+		content: meg + "，将返回首页",
 		showCancel: false,
 		success: (res) => {
 			if (res.confirm) {
